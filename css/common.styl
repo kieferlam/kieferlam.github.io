@@ -1,0 +1,44 @@
+.parallax
+    perspective: 10px
+    overflow-x: hidden
+    overflow-y: auto
+    height: 100vh
+
+.parallax-layer
+    position: absolute
+
+.parallax-back
+    transform: translateZ(-4px) scale(0.8)
+
+.parallax-base
+    transform: translateZ(0)
+
+.min-height-80
+    min-height: 80em
+
+nav 
+    a
+        text-decoration: none
+        color: #000
+        display: inline-block
+        height: 2em
+
+        &:after
+            content: ''
+            display: block
+            position: relative
+            width: 100%
+            border-top: 1px solid #000
+            transform: scaleX(0.0)
+            transform-origin: left
+            transition: transform 300ms ease
+        
+        &:hover
+            &:after
+                transform: scaleX(1.0)
+
+section 
+    h1 
+        text-align: center
+        font-size: 4em
+        font-weight: normal

@@ -1,0 +1,191 @@
+pageflip_duration = 300ms
+perspective = 3000px
+primary = #d4af37
+page_colour = #DDD
+icon_size = 2em
+primary_font = 'Open Sans', sans-serif
+
+control_hover_duration = 300ms
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: primary_font
+
+body
+    width: 100%
+
+.body-container
+    width:100%
+    height 100vh
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+
+.content-wrapper
+    width:80%
+    height 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+
+header
+    display: flex
+    flex-direction: row
+    justify-content: start
+    width: 100%
+    padding: 1em 0
+
+    ul
+        list-style-type: none
+        display: flex
+        flex-direction: row
+    li
+        display: inline-block
+        padding: 0 1em
+
+    .header-align-right
+        margin-left: auto
+
+    .header-text
+        font-size: 1.5em
+
+main
+    width: 100%
+
+#intro-container
+    top: 13em
+    max-width: 100em
+
+#intro-left-container
+    left: 0
+
+#intro-right-container
+    img
+        position: relative
+        left: 44em
+        top: -15em
+
+.intro-img
+    filter: grayscale(1.0)
+
+.big-text
+    font-size: 4em
+
+.text-significant
+    color: #000000
+
+.intro
+    width: 75%
+    color: #777777
+
+.book-container
+    position: relative
+    width: 100%
+
+.book
+    position: relative
+    display: inline-block
+    min-height: 80vh
+    width: 100%
+
+.bg-img-container
+    position: absolute
+    height: 100%
+    display: flex
+
+.bg-img
+    align-self: center
+    position: relative
+    width: 100%
+    height: auto
+
+.page
+    position: absolute
+    width: 100%
+    height: 100%
+    display: inline-block
+    overflow: hidden
+
+    .page-side
+        display: inline-block
+        width: 50%
+        min-height: 300px
+        height: 100%;
+        position: absolute
+        transform-origin: left
+        transition: transform pageflip_duration, z-index pageflip_duration
+        transform: perspective(perspective) rotateY(0)
+        left: @width
+        background: page_colour
+        border-radius: 16px;
+
+    .page-content
+        position: relative
+
+    .page-front
+        z-index: 1
+    
+    .page-back
+        z-index: 0
+        .page-content
+            transform: scaleX(-1)
+
+.page-flipped
+    .page-side
+        transform: perspective(perspective) rotateY(-180deg)
+
+    .page-front
+        z-index: 0
+    
+    .page-back
+        z-index: 1
+
+.page-standby
+    z-index: -1
+
+.page-hidden
+    visibility: hidden
+
+.overlay
+    position: absolute
+    z-index: 999
+    display: inline-block
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+
+.control-container
+    display: inline-block
+    position: relative
+
+#next-control-container
+    img
+        border: 2px solid primary
+        border-radius: 100%
+
+.button-control
+    top: 0
+    transition: top control_hover_duration
+    cursor: pointer
+    img
+        position: relative
+        display: inline-block
+        width: icon_size
+        height: icon_size
+        transition: filter control_hover_duration, width control_hover_duration, height control_hover_duration, left control_hover_duration
+        filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.2))
+
+    &:hover
+        top: -1px
+        img
+            filter: drop-shadow(1px 6px 3px rgba(0, 0, 0, 0.2))
+            width: s('calc(%s + 2px)', icon_size)
+            height: s('calc(%s + 2px)', icon_size)
+            left: -1px
