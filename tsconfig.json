@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES5",
+        "outDir": "../master/js/",
+        "rootDir": "./ts/",
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true
+    }
+}
