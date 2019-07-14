@@ -1,3 +1,6 @@
+primary_font = 'Open Sans', sans-serif
+heading_font = monospace
+
 .parallax
     perspective: 10px
     overflow-x: hidden
@@ -15,6 +18,16 @@
 
 .min-height-80
     min-height: 80em
+
+.kvp-key
+    font-size: 2.5em
+    font-weight: normal
+    text-align: right
+    display: inline-block;
+    min-width: 5em
+
+    &:after
+        content: ': '
 
 nav 
     a
@@ -40,5 +53,7 @@ nav
 section 
     h1 
         text-align: center
-        font-size: 4em
+        font-size: 2em
         font-weight: normal
+        margin: 1em
+        font-family: heading_font
