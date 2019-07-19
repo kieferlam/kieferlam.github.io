@@ -1,22 +1,16 @@
 pageflip_duration = 300ms
 perspective = 3000px
-page_colour = #DDD
+page_colour = #F5F5F5
 icon_size = 2em
+
+page_inner_radius = 16px
+page_outer_radius = 8px
 
 control_hover_duration = 300ms
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap')
 
 @import "common.styl"
-
-*
-    box-sizing: border-box
-    margin: 0
-    padding: 0
-    font-family: primary_font
-
-body
-    width: 100%
 
 .body-container
     width:100%
@@ -123,10 +117,12 @@ main
         transform: perspective(perspective) rotateY(0)
         left: @width
         background: page_colour
-        border-radius: 16px;
+        border-radius: page_outer_radius page_inner_radius page_inner_radius page_outer_radius;
+        border-left: 1px solid #DDD
 
     .page-content
         position: relative
+        padding: 0 2em
 
     .page-front
         z-index: 1
@@ -152,40 +148,20 @@ main
 .page-hidden
     visibility: hidden
 
-.overlay
-    position: absolute
-    z-index: 999
+.lang-list
+    li
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin: 2em 0
+
+.lang-logo
     display: inline-block
-    left: 0
-    top: 0
-    width: 100%
-    height: 100%
+    img
+        width: 6em
+        height: auto
 
-.control-container
+.lang-name
     display: inline-block
-    position: relative
-
-#next-control-container
-    img
-        border: 2px solid primary
-        border-radius: 100%
-
-.button-control
-    top: 0
-    transition: top control_hover_duration
-    cursor: pointer
-    img
-        position: relative
-        display: inline-block
-        width: icon_size
-        height: icon_size
-        transition: filter control_hover_duration, width control_hover_duration, height control_hover_duration, left control_hover_duration
-        filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.2))
-
-    &:hover
-        top: -1px
-        img
-            filter: drop-shadow(1px 6px 3px rgba(0, 0, 0, 0.2))
-            width: s('calc(%s + 2px)', icon_size)
-            height: s('calc(%s + 2px)', icon_size)
-            left: -1px
+    font-size: 3em
+    padding: 0 0.5em
