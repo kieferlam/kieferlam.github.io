@@ -1,40 +1,48 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import { Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
 
 import MainPage from './MainPage';
 import CvPage from './CvPage';
+import MainHeader from './MainHeader';
 
-function App() {
-    return (
-        <div className="App">
-            <header>
-                <Switch>
-                    <Route exact path="/">
-                        Header 1
-                    </Route>
-                    <Route path="*">
-                        Header 2
-                    </Route>
-                </Switch>
-            </header>
+class App extends React.Component {
 
-            <main>
-                <Switch>
-                    <Route exact path="/">
-                        <MainPage />
-                    </Route>
-                    <Route path="/cv">
-                        <CvPage />
-                    </Route>
-                </Switch>
-            </main>
+    setTheme(theme) {
+        this.setState({ theme: theme })
+    }
 
-            <footer>
-                Footer
+    render() {
+        return (
+            <div className="App">
+                <header>
+                    <Switch>
+                        <Route exact path="/">
+                            <MainHeader className="header-large" />
+                        </Route>
+                        <Route path="*">
+                            <MainHeader className="header-default" />
+                        </Route>
+                    </Switch>
+                </header>
+
+                <main>
+                    <Switch>
+                        <Route exact path="/">
+                            <MainPage />
+                        </Route>
+                        <Route path="/cv">
+                            <CvPage />
+                        </Route>
+                    </Switch>
+                </main>
+
+                <footer>
+                    Footer
             </footer>
-        </div>
-    );
+            </div>
+        );
+    }
 }
 
 export default App;
