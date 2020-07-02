@@ -101,7 +101,9 @@ $socials-height: 3rem;
 }
 
 .socials-container{
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .socials-container ul{
@@ -118,4 +120,11 @@ $socials-height: 3rem;
     height: $socials-height;
     width: auto;
     filter: brightness(100);
+    transform: rotateZ(0deg);
+    transition: 0.25s ease;
+}
+
+.socials-container img:hover{
+    filter: brightness(1);
+    transform: rotateZ(360deg);
 }
