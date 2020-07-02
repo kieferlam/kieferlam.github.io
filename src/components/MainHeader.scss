@@ -1,3 +1,121 @@
+@import '../global.scss';
+
+$header-blur: 32px;
+$header-text-col: white;
+$header-desc-col: #DDD;
+$header-foot-col: #999;
+
+$header-bgcol: rgba($theme-base-colour, 0.71);
+$header-name-font-size: 3rem;
+$header-name-font: 'Source Serif';
+
+$header-container-border-radius: 2rem;
+
+$header-large-content-padding: 4rem;
+$header-small-content-padding: 1rem;
+
+$socials-height: 3rem;
+
+.header-large{
+    background: url('https://source.unsplash.com/1920x1080/?technology');
+    background-size: cover;
+    background-position: center;
+    background-color: $theme-base-colour;
+    height: 100vh;
+}
+
+.header-colour-overlay{
+    background: $header-bgcol;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container{
+    display: inline-flex;
+    backdrop-filter: blur($header-blur);
+    color: $header-text-col;
+    flex-direction: row;
+    align-items: stretch;
+    justify-self: flex-start;
+    border-radius: $header-container-border-radius;
+    flex-basis: 75%;
+}
+
+.header-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+}
+
+.header-large .header-container{
+    padding: $header-large-content-padding;
+}
+
+.header-small .header-container{
+    padding: $header-small-content-padding;
+}
+
+.portrait-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
 .portrait-container img{
     border-radius: 100%;
+}
+
+.name-links-container{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name-links-container h1{
+    display: inline-block;
+    margin: 0;
+    font-size: $header-name-font-size;
+    font-family: $header-name-font;
+}
+
+.description-container{
+    margin:1rem;
+    word-wrap: normal;
+    display: inline-block;
+}
+
+.description-text{
+    color: $header-desc-col;
+    font-size: 1.25rem;
+    width: 75%;
+}
+
+.description-footer-text{
+    color: $header-foot-col;
+    font-size: 1.25rem;
+}
+
+.socials-container{
+    display: inline-block;
+}
+
+.socials-container ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+.socials-container li{
+    display: inline-block;
+    margin: 0 0.25rem;
+}
+
+.socials-container img{
+    height: $socials-height;
+    width: auto;
+    filter: brightness(100);
 }

@@ -1,0 +1,18 @@
+@font-face{
+    font-family: 'Open Sans';
+    src: local('Open Sans'), url(./media/font/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'Open Sans Light';
+    src: local('Open Sans Light'), url(./media/font/OpenSans-Light.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'Source Serif';
+    src: local('Source Serif'), url(./media/font/SourceSerifPro-Regular.ttf) format('truetype');
+}
+
+// Theme
+$theme-base-colour: rgb(32,35,42);
+$theme-bg-colour: #EEE;
