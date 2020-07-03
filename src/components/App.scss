@@ -5,6 +5,25 @@ html {
     height: 100%;
 }
 
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
+    html{ font-size: 50%; }
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    html{ font-size: 53%; }
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    html{ font-size: 56%; }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+    html{ font-size: 58%; }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+    html{ font-size: 60%; }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+    html{ font-size: 62.5%; }
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }

@@ -6,22 +6,25 @@ $header-desc-col: #DDD;
 $header-foot-col: #999;
 
 $header-bgcol: rgba($theme-base-colour, 0.71);
-$header-name-font-size: 3rem;
+$header-name-font-size: 4.8rem;
 $header-name-font: 'Source Serif';
+$header-desc-font-size: 2rem;
 
-$header-container-border-radius: 2rem;
+$header-portrait-width: 19.2rem;
 
-$header-large-content-padding: 4rem;
-$header-small-content-padding: 1rem;
+$header-container-border-radius: 3.2rem;
 
-$socials-height: 3rem;
+$header-large-content-padding: 6.4rem;
+$header-small-content-padding: 1.6rem;
+
+$socials-height: 4.8rem;
 
 .header-large{
     background: url('https://source.unsplash.com/collection/261936/1920x1080');
     background-size: cover;
     background-position: center;
     background-color: $theme-base-colour;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .header-colour-overlay{
@@ -30,6 +33,7 @@ $socials-height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: inherit;
 }
 
 .header-container{
@@ -38,9 +42,10 @@ $socials-height: 3rem;
     color: $header-text-col;
     flex-direction: row;
     align-items: stretch;
-    justify-self: flex-start;
+    justify-content: center;
     border-radius: $header-container-border-radius;
     flex-basis: 75%;
+    flex-wrap: wrap;
 }
 
 .header-text-container{
@@ -53,6 +58,30 @@ $socials-height: 3rem;
 .header-large .header-container{
     padding: $header-large-content-padding;
 }
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
+    .header-large .header-container{ padding: 0; }
+    .header-text-container{ flex-basis: 100%; }
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .header-large .header-container{ padding: 0; }
+    .header-text-container{ flex-basis: 100%; }
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .header-large .header-container{ padding: 0; }
+    .header-text-container{ flex-basis: 100%; }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .header-large .header-container{ padding: $header-small-content-padding; }
+    .header-text-container{ flex-basis: 76%; }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+    .header-large .header-container{ padding: $header-large-content-padding; }
+    .header-text-container{ flex-basis: 76%; }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+    .header-large .header-container{ padding: $header-large-content-padding; }
+    .header-text-container{ flex-basis: 76%; }
+}
 
 .header-small .header-container{
     padding: $header-small-content-padding;
@@ -62,11 +91,13 @@ $socials-height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    margin: 0;
+    flex-basis: 20%;
 }
 
 .portrait-container img{
     border-radius: 100%;
+    width: 17rem;
 }
 
 .name-links-container{
@@ -74,6 +105,7 @@ $socials-height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .name-links-container h1{
@@ -81,6 +113,7 @@ $socials-height: 3rem;
     margin: 0;
     font-size: $header-name-font-size;
     font-family: $header-name-font;
+    flex: 1;
 }
 
 .description-container{
@@ -91,13 +124,23 @@ $socials-height: 3rem;
 
 .description-text{
     color: $header-desc-col;
-    font-size: 1.25rem;
+    font-size: $header-desc-font-size;
     width: 75%;
+}
+
+.description-link{
+    display: block;
+    text-align: right;
+    width: 75%;
+}
+.description-link a{
+    text-decoration: none;
+    color: $header-text-col;
 }
 
 .description-footer-text{
     color: $header-foot-col;
-    font-size: 1.25rem;
+    font-size: $header-desc-font-size;
 }
 
 .socials-container{
@@ -109,6 +152,7 @@ $socials-height: 3rem;
 .socials-container ul{
     list-style-type: none;
     margin: 0;
+    padding: 0;
 }
 
 .socials-container li{

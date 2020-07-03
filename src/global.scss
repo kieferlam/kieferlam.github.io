@@ -13,6 +13,10 @@
     src: local('Source Serif'), url(./media/font/SourceSerifPro-Regular.ttf) format('truetype');
 }
 
+.hide{
+    display: none !important;
+}
+
 // Theme
 $theme-base-colour: rgb(32,35,42);
 $theme-bg-colour: #EEE;

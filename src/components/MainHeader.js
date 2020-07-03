@@ -33,9 +33,10 @@ class MainHeader extends React.Component {
                             </div>
                             <div className="description-container">
                                 <p className="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt turpis ac dolor pulvinar mollis. Aenean ultrices ante nulla, posuere pellentesque est dignissim in.</p>
+                                <p className={'description-link hide'}><a href="/cv">View CV</a></p>
 
                                 <p className="description-footer-text">
-                                    Web Development &#124; Graphics Programming &#124; Game Development &#124; App Development
+                                    Web Development &#124; Graphics Programming &#124; Machine Learning &#124; App Development
                                 </p>
                             </div>
                         </div>
