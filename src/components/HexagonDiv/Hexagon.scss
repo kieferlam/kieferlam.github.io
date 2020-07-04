@@ -1,0 +1,71 @@
+@use '../MainHeader.scss' as *;
+
+.hex-1{
+    transform: rotateZ(120deg);
+    transition-delay: 0s;
+}
+
+.hex-2{
+    transform: rotateZ(-60deg);
+    transition-delay: 0.5s;
+}
+
+.hex-3{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/* @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+    animation: 1s ease 0s 1 normal both running keepstraight-backward;
+}
+
+.hex-1:hover .hex-3{
+    animation-play-state: running;
+    animation-direction: normal;
+    animation-name: keepstraight-forward;
+}
+
+.hex-1,.hex-2{
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-property: transform;
+    overflow: hidden;
+}
+
+.hex-1:hover, .hex-1:hover>.hex-2{
+    transform: rotateZ(0deg);
+}
+
+.hex-3 *{
+    visibility: hidden;
+    animation: 1s ease 0s 1 normal forwards running visibleAfterDelay;
+}
+
+@keyframes visibleAfterDelay{
+    99%{ visibility: hidden; }
+    100%{ visibility: visible; }
+}
+
+@keyframes keepstraight-forward{
+    0%{
+        transform: rotateZ(-60deg);
+    }
+    50%{
+        transform: rotateZ(60deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes keepstraight-backward{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(-120deg);
+    }
+    100%{
+        transform: rotateZ(-60deg);
+    }
+}
