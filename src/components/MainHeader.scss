@@ -11,6 +11,7 @@ $header-name-font: 'Source Serif';
 $header-desc-font-size: 2rem;
 
 $header-portrait-width: 19.2rem;
+$header-portrait-image-width: 23rem;
 
 $header-container-border-radius: 3.2rem;
 
@@ -61,26 +62,27 @@ $socials-height: 4.8rem;
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
     .header-large .header-container{ padding: 0; }
     .header-text-container{ flex-basis: 100%; }
+    .name-links-container{ justify-content: center; }
 }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
     .header-large .header-container{ padding: 0; }
     .header-text-container{ flex-basis: 100%; }
+    .name-links-container{ justify-content: center; }
 }
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
     .header-large .header-container{ padding: 0; }
     .header-text-container{ flex-basis: 100%; }
+    .name-links-container{ justify-content: center; }
 }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
     .header-large .header-container{ padding: $header-small-content-padding; }
     .header-text-container{ flex-basis: 76%; }
+    .name-links-container{ justify-content: space-between; }
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
     .header-large .header-container{ padding: $header-large-content-padding; }
     .header-text-container{ flex-basis: 76%; }
-}
-@media (min-width:1281px) { /* hi-res laptops and desktops */
-    .header-large .header-container{ padding: $header-large-content-padding; }
-    .header-text-container{ flex-basis: 76%; }
+    .name-links-container{ justify-content: space-between; }
 }
 
 .header-small .header-container{
@@ -96,8 +98,8 @@ $socials-height: 4.8rem;
 }
 
 .portrait-container img{
-    border-radius: 100%;
-    width: 17rem;
+    // border-radius: 100%;
+    width: $header-portrait-image-width;
 }
 
 .name-links-container{
@@ -113,7 +115,7 @@ $socials-height: 4.8rem;
     margin: 0;
     font-size: $header-name-font-size;
     font-family: $header-name-font;
-    flex: 1;
+    flex-grow: 1;
 }
 
 .description-container{

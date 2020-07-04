@@ -2,6 +2,7 @@ import React from 'react';
 import './MainHeader.scss';
 
 import Portrait from '../media/img/portrait.png';
+import Hexagon from './HexagonDiv/Hexagon';
 
 class MainHeader extends React.Component {
     constructor(props) {
@@ -20,7 +21,9 @@ class MainHeader extends React.Component {
                 <div className="header-colour-overlay">
                     <div className="header-container">
                         <div className="portrait-container">
-                            <img src={Portrait} alt="Portrait" />
+                            <Hexagon height="20rem">
+                                <img src={Portrait} alt="Portrait" />
+                            </Hexagon>
                         </div>
                         <div className="header-text-container">
                             <div className="name-links-container">
