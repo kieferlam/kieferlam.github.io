@@ -6,14 +6,14 @@ $timeline-knob-size: 2.4rem;
 $timeline-knob-border-size: $timeline-line-width;
 
 .timeline{
-    width: 65%;
+    width: 55%;
     min-width: 700px;
     margin: auto;
     border-left: $timeline-line-width solid $theme-base-colour;
 }
 
 .timeline-entry{
-    padding: 2rem;
+    padding:5rem;
     position: relative;
 }
 
@@ -46,5 +46,5 @@ $timeline-knob-border-size: $timeline-line-width;
 }
 
 .timeline-entry-description-container{
-    font-size: 1.25rem;
+    font-size: 2rem;
 }
