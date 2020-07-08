@@ -1,0 +1,50 @@
+@import '../../global.scss';
+
+$timeline-line-width: 0.4rem;
+
+$timeline-knob-size: 2.4rem;
+$timeline-knob-border-size: $timeline-line-width;
+
+.timeline{
+    width: 65%;
+    min-width: 700px;
+    margin: auto;
+    border-left: $timeline-line-width solid $theme-base-colour;
+}
+
+.timeline-entry{
+    padding: 2rem;
+    position: relative;
+}
+
+.timeline-entry-knob-container{
+    position: absolute;
+    width: $timeline-knob-size;
+    height: $timeline-knob-size;
+    display: inline-block;
+    background: $theme-bg-colour;
+    border: $timeline-knob-border-size solid $theme-base-colour;
+    border-radius: 100%;
+    left: -($timeline-knob-size/2) - ($timeline-line-width/2);
+    top: 50%;
+}
+
+.timeline-entry-date-container{
+    display: inline-block;
+    position: absolute;
+    left: -10rem;
+    top: 50%;
+    font-size: 1.5rem;
+}
+
+.timeline-entry-title-container{
+    font-size: 3rem;
+}
+
+.timeline-entry-separator{
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.3);
+}
+
+.timeline-entry-description-container{
+    font-size: 1.25rem;
+}
