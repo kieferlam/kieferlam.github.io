@@ -13,7 +13,6 @@ class MainHeader extends React.Component {
 
     render() {
 
-        console.log(this.state.socials)
         const social_links = this.state.socials.map((soc, index) => <li key={index}><a href={soc.url}><img src={process.env.PUBLIC_URL + soc.img} alt={soc.name} /></a></li>);
 
         return (
