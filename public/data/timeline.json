@@ -1,16 +1,44 @@
 [
     {
-        "img": "/img/uea.jpg",
-        "title": "Started studying Computer Science at the University of East Anglia",
+        "img": "/img/uea.png",
+        "title": "Started studying Computer Science at the University&nbsp;of&nbsp;East&nbsp;Anglia",
         "date": "2016-9",
         "enddate": "2020-7",
-        "description": "After discovering my passion for programming, I set my sights on software development for my future and decided to study computer science at the University of East Anglia."
+        "description": "After discovering my passion for programming, I set my sights on software development for my future and decided to study computer science at the University&nbsp;of&nbsp;East&nbsp;Anglia."
     },
     {
-        "img": "/img/robotmascot.jpg",
-        "title": "Web Developer Internship at Robot Mascot",
+        "img": "/img/robot-mascot.png",
+        "title": "Web Developer Internship at Robot&nbsp;Mascot",
         "date": "2017-10",
         "enddate": "2018-03",
-        "description": "During my 2nd year at UEA, I was accepted as a full stack web developer intern at Robot Mascot where I worked together with a team to build an e-commerce website for a client."
+        "description": "During my 2nd year at UEA, I was interviewed and accepted as a full stack web developer intern at Robot&nbsp;Mascot where I worked together with a team to build an bespoke e-commerce website for a client."
+    },
+    {
+        "img": "/img/uea.png",
+        "title": "UEA App Development Internship",
+        "date": "2018-6",
+        "enddate": "2018-9",
+        "description": "In the summer of my 2nd year at UEA, I successfully applied for an internship hosted by the university where I worked in a team with other interns to develop a mobile application for some clients."
+    },
+    {
+        "img": "/img/robot-mascot.png",
+        "title": "Freelance Web Developer",
+        "date": "2019-4",
+        "enddate": "2019-8",
+        "description": "After the web developer internship, I was hired as a freelance web developer to maintain and add new features/content to the bespoke e-commerce website that was developed and launched during the internship."
+    },
+    {
+        "img": "/img/uea.png",
+        "title": "Associate Tutor",
+        "date": "2020-1",
+        "enddate": "2020-5",
+        "description": "In my final year, I was asked to be take on the role of an associate tutor and be a lab assistant for a 2nd year computer science module for that semester. I would provide assistance and teaching to students that requested it in the computer labs for that module."
+    },
+    {
+        "img": "/img/uea.png",
+        "title": "Graduated from University&nbsp;of&nbsp;East&nbsp;Anglia",
+        "date": "2020-8",
+        "enddate": "2020-8",
+        "description": "I graduated with a First Class Honours in Computer Science at the University&nbsp;of&nbsp;East&nbsp;Anglia."
     }
 ]
