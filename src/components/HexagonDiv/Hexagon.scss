@@ -1,4 +1,4 @@
-@use '../MainHeader.scss' as *;
+@import '../../global.scss';
 
 .hex-1{
     transform: rotateZ(120deg);
@@ -15,8 +15,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: $transition-duration-normal $transition-timefunc-normal;
 /* @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name */
-    animation: 1s ease 0s 1 normal both running keepstraight-backward;
+    // animation: 1s ease 0s 1 normal both running keepstraight-backward;
+}
+
+.hex-3:hover{
+    clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
 }
 
 .hex-1:hover .hex-3{
@@ -37,8 +43,8 @@
 }
 
 .hex-3 *{
-    visibility: hidden;
-    animation: 1s ease 0s 1 normal forwards running visibleAfterDelay;
+    //visibility: hidden;
+    //animation: 1s ease 0s 1 normal forwards running visibleAfterDelay;
 }
 
 @keyframes visibleAfterDelay{
