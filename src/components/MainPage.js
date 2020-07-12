@@ -18,7 +18,7 @@ class MainPage extends React.Component{
 
     render(){
 
-        const timeline = this.state.timeline.map((entry, index) => <TimelineEntry key={index} title={entry.title} date={new Date(entry.date)} description={entry.description} />)
+        const timeline = this.state.timeline.map((entry, index) => <TimelineEntry key={index} img={entry.img} title={entry.title} date={new Date(entry.date)} description={entry.description} />)
 
         return <div className={this.props.className}>
             <Timeline entries={timeline} />

@@ -37,6 +37,22 @@ $timeline-knob-border-size: $timeline-line-width;
     font-size: 1.5rem;
 }
 
+.timeline-entry-content-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.timeline-entry-image-container{
+    margin: 0 2rem;
+}
+
+.timeline-entry-image-container img{
+    width: 12rem;
+    height: auto;
+}
+
 .timeline-entry-title-container{
     font-size: 3rem;
 }
