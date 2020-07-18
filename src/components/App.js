@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
 import MainPage from './MainPage';
 import CvPage from './CvPage';
 import MainHeader from './MainHeader';
+import Footer from './Footer';
 
 class App extends React.Component {
 
@@ -38,8 +39,8 @@ class App extends React.Component {
                 </main>
 
                 <footer>
-                    Footer
-            </footer>
+                    <Footer />
+                </footer>
             </div>
         );
     }
