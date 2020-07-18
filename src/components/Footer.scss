@@ -1,0 +1,42 @@
+@import '../global.scss';
+
+$footer-text-col: white;
+
+$socials-height: 4rem;
+
+footer{    
+    background: $theme-base-colour;
+}
+
+footer > div{
+    color: $footer-text-col;
+    font-size: 1.6rem;
+    display: flex;
+    width: 65%;
+    min-width: 700px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer-socials-container img{
+    height: $socials-height;
+    width: auto;
+    filter:brightness(100);
+}
+
+.footer-socials-container ul{
+    list-style-type: none;
+}
+
+.footer-socials-container li{
+    display: inline;
+    margin: 0 0.25rem;
+}
+
+.footer-message-text{
+    padding: 1rem 0;
+}
+
+.footer-message-text p{
+    margin: 1rem 0;
+}
