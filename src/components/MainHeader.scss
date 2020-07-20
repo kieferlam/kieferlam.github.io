@@ -28,6 +28,10 @@ $socials-height: 4.8rem;
     min-height: 100vh;
 }
 
+.header-large svg{
+    position: absolute;
+}
+
 .header-colour-overlay{
     background: $header-bgcol;
     height:100%;
@@ -100,6 +104,11 @@ $socials-height: 4.8rem;
 .portrait-container img{
     // border-radius: 100%;
     width: $header-portrait-image-width;
+    transition: $transition-duration-normal $transition-timefunc-normal;
+}
+
+.portrait-container img:hover{
+    width: $header-portrait-image-width + 3rem;
 }
 
 .name-links-container{
@@ -145,32 +154,33 @@ $socials-height: 4.8rem;
     font-size: $header-desc-font-size;
 }
 
-.socials-container{
+.links-container{
     display: inline-flex;
     flex-direction: row;
     align-items: center;
 }
 
-.socials-container ul{
+.links-container ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.socials-container li{
+.links-container li{
     display: inline-block;
-    margin: 0 0.25rem;
+    margin: 0 0.5rem;
 }
 
-.socials-container img{
+.links-container img{
+    user-select: none;
     height: $socials-height;
     width: auto;
     filter: brightness(100);
     transform: rotateZ(0deg);
-    transition: 0.25s ease;
+    transition: $transition-duration-normal $transition-timefunc-normal;
 }
 
-.socials-container img:hover{
+.links-container img:hover{
     filter: brightness(1);
     transform: rotateZ(360deg);
 }

@@ -11,9 +11,19 @@ class MainHeader extends React.Component {
         fetch(process.env.PUBLIC_URL + '/data/socials.json').then(res => res.json()).then(result => this.setState({ socials: result }))
     }
 
+    getWaveSvg() {
+        return <svg width="0" height="0">
+            <defs>
+                <clipPath id="wave" clipPathUnits="objectBoundingBox">
+                    <path d=""></path>
+                </clipPath>
+            </defs>
+        </svg >
+    }
+
     render() {
 
-        const social_links = this.state.socials.map((soc, index) => <li key={index}><a href={soc.url}><img src={process.env.PUBLIC_URL + soc.img} alt={soc.name} /></a></li>);
+        const social_links = this.state.socials.map((soc, index) => <li key={'header-socials-' + index}><a href={soc.url}><img src={process.env.PUBLIC_URL + soc.img} alt={soc.name} /></a></li>);
 
         return (
             <div className={this.props.className}>
@@ -27,7 +37,7 @@ class MainHeader extends React.Component {
                         <div className="header-text-container">
                             <div className="name-links-container">
                                 <h1>Kiefer Lam</h1>
-                                <div className="socials-container">
+                                <div className="links-container">
                                     <ul>
                                         {social_links}
                                     </ul>
@@ -44,6 +54,7 @@ class MainHeader extends React.Component {
                         </div>
                     </div>
                 </div>
+                {this.getWaveSvg()}
             </div>
         )
     }
