@@ -5,6 +5,22 @@ $timeline-line-width: 0.4rem;
 $timeline-knob-size: 2.4rem;
 $timeline-knob-border-size: $timeline-line-width;
 
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
+    .timeline-entry-content-container{ flex-wrap: wrap;}
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .timeline-entry-content-container{ flex-wrap: wrap;}
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .timeline-entry-content-container{ flex-wrap: wrap;}
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .timeline-entry-content-container{ flex-wrap: nowrap;}
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+    .timeline-entry-content-container{ flex-wrap: nowrap;}
+}
+
 .timeline{
     width: 55%;
     min-width: 700px;
@@ -35,6 +51,7 @@ $timeline-knob-border-size: $timeline-line-width;
     left: -10rem;
     top: 50%;
     font-size: 1.5rem;
+    user-select: none;
 }
 
 .timeline-entry-content-container{
@@ -51,6 +68,7 @@ $timeline-knob-border-size: $timeline-line-width;
 .timeline-entry-image-container img{
     width: 12rem;
     height: auto;
+    user-select: none;
 }
 
 .timeline-entry-title-container{
