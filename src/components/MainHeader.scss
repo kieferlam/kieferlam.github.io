@@ -171,16 +171,20 @@ $socials-height: 4.8rem;
     margin: 0 0.5rem;
 }
 
+.links-container a{
+    display: inline-block;
+}
+
 .links-container img{
     user-select: none;
     height: $socials-height;
     width: auto;
     filter: brightness(100);
-    transform: rotateZ(0deg);
+    transform: rotateZ(0deg) rotateY(0deg);
     transition: $transition-duration-normal $transition-timefunc-normal;
 }
 
-.links-container img:hover{
+.links-container a:hover>img{
     filter: brightness(1);
-    transform: rotateZ(360deg);
+    transform: rotateZ(360deg) rotateY(360deg);
 }
