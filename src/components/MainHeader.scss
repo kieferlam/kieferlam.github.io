@@ -125,6 +125,7 @@ $socials-height: 4.8rem;
     font-size: $header-name-font-size;
     font-family: $header-name-font;
     flex-grow: 1;
+    font-weight: normal;
 }
 
 .description-container{
@@ -179,12 +180,12 @@ $socials-height: 4.8rem;
     user-select: none;
     height: $socials-height;
     width: auto;
-    filter: brightness(100);
+    filter: brightness(0) invert(1);
     transform: rotateZ(0deg) rotateY(0deg);
     transition: $transition-duration-normal $transition-timefunc-normal;
 }
 
 .links-container a:hover>img{
-    filter: brightness(1);
+    filter: brightness(1) invert(0);
     transform: rotateZ(360deg) rotateY(360deg);
 }
