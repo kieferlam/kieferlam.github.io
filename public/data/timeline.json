@@ -2,8 +2,8 @@
     {
         "img": "/img/uea.png",
         "title": "Started studying Computer Science at the University&nbsp;of&nbsp;East&nbsp;Anglia",
-        "date": "2016-9",
-        "enddate": "2020-7",
+        "date": "2016-09",
+        "enddate": "2020-07",
         "description": "After discovering my passion for programming, I set my sights on software development for my future and decided to study computer science at the University&nbsp;of&nbsp;East&nbsp;Anglia."
     },
     {
@@ -16,29 +16,29 @@
     {
         "img": "/img/uea.png",
         "title": "UEA App Development Internship",
-        "date": "2018-6",
-        "enddate": "2018-9",
+        "date": "2018-06",
+        "enddate": "2018-09",
         "description": "In the summer of my 2nd year at UEA, I successfully applied for an internship hosted by the university where I worked in a team with other interns to develop a mobile application for some clients."
     },
     {
         "img": "/img/robot-mascot.png",
         "title": "Freelance Web Developer",
-        "date": "2019-4",
-        "enddate": "2019-8",
+        "date": "2019-04",
+        "enddate": "2019-08",
         "description": "After the web developer internship, I was hired as a freelance web developer to maintain and add new features/content to the bespoke e-commerce website that was developed and launched during the internship."
     },
     {
         "img": "/img/uea.png",
         "title": "Associate Tutor",
-        "date": "2020-1",
-        "enddate": "2020-5",
+        "date": "2020-01",
+        "enddate": "2020-05",
         "description": "In my final year, I was asked to be take on the role of an associate tutor and be a lab assistant for a 2nd year computer science module for that semester. I would provide assistance and teaching to students that requested it in the computer labs for that module."
     },
     {
         "img": "/img/uea.png",
         "title": "Graduated from University&nbsp;of&nbsp;East&nbsp;Anglia",
-        "date": "2020-8",
-        "enddate": "2020-8",
+        "date": "2020-08",
+        "enddate": "2020-08",
         "description": "I graduated with a First Class Honours in Computer Science at the University&nbsp;of&nbsp;East&nbsp;Anglia."
     }
 ]
