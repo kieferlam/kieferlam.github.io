@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Email",
+        "url": "mailto:kieferlam@gmail.com",
+        "img": "/img/email-svg.svg"
+    },
+    {
+        "name": "Github",
+        "url": "https://github.com/kieferlam",
+        "img": "/img/github-dark.png"
+    },
+    {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/kieferlam/",
+        "img": "/img/linkedin.png"
+    }
+]
