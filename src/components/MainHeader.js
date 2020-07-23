@@ -1,16 +1,10 @@
 import React from 'react';
 import './MainHeader.scss';
 
-import Portrait from '../media/img/portrait.png';
+import Portrait from '../media/img/portrait.jpg';
 import Hexagon from './HexagonDiv/Hexagon';
 
 class MainHeader extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = { socials: [] }
-        fetch(process.env.PUBLIC_URL + '/data/socials.json').then(res => res.json()).then(result => this.setState({ socials: result }))
-    }
-
     getWaveSvg() {
         return <svg width="0" height="0">
             <defs>
@@ -23,11 +17,14 @@ class MainHeader extends React.Component {
 
     render() {
 
-        const social_links = this.state.socials.map((soc, index) => <li key={'header-socials-' + index}><a href={soc.url}><img src={process.env.PUBLIC_URL + soc.img} alt={soc.name} /></a></li>);
+        const social_links = this.props.socials.map((soc, index) => <li key={'header-socials-' + index}><a href={soc.url}><img src={process.env.PUBLIC_URL + soc.img} alt={soc.name} /></a></li>);
 
         return (
             <div className={this.props.className}>
                 <div className="header-colour-overlay">
+                    <div className="header-background-text-container">
+                        <p>Random tech image from unsplash.com</p>
+                    </div>
                     <div className="header-container">
                         <div className="portrait-container">
                             <Hexagon height="20rem">
@@ -44,7 +41,7 @@ class MainHeader extends React.Component {
                                 </div>
                             </div>
                             <div className="description-container">
-                                <p className="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt turpis ac dolor pulvinar mollis. Aenean ultrices ante nulla, posuere pellentesque est dignissim in.</p>
+                                <p className="description-text">{this.props.profile.summary}</p>
                                 <p className={'description-link hide'}><a href="/cv">View CV</a></p>
 
                                 <p className="description-footer-text">

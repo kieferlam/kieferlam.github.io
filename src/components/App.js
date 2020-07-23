@@ -8,9 +8,11 @@ import MainHeader from './MainHeader';
 import Footer from './Footer';
 
 class App extends React.Component {
-
-    setTheme(theme) {
-        this.setState({ theme: theme })
+    constructor(props){
+        super(props)
+        this.state = { socials: [], profile: {} }
+        fetch(`${process.env.PUBLIC_URL}/data/socials.json`).then(res => res.json()).then(result => this.setState({ socials: result }))
+        fetch(`${process.env.PUBLIC_URL}/data/profile.json`).then(res => res.json()).then(result => this.setState({ profile: result }))
     }
 
     render() {
@@ -19,7 +21,7 @@ class App extends React.Component {
                 <header>
                     <Switch>
                         <Route exact path="/">
-                            <MainHeader className="header-large" />
+                            <MainHeader socials={this.state.socials} profile={this.state.profile} className="header-large" />
                         </Route>
                         <Route path="*">
                             <MainHeader className="header-default" />
@@ -39,7 +41,7 @@ class App extends React.Component {
                 </main>
 
                 <footer>
-                    <Footer />
+                    <Footer socials={this.state.socials} profile={this.state.profile} />
                 </footer>
             </div>
         );
