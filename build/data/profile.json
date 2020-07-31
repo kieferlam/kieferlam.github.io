@@ -2,13 +2,124 @@
     "summary": "Results-driven programming enthusiast since young; I'm a graduate in computer science from the University of East Anglia skilled in problem solving with a strong drive to constantly improve.",
     "info": [
         "kieferlam@gmail.com",
-        "+447884955566",
-        "May 1998",
+        "07884955566",
         "Colchester"
     ],
     "footerText": [
         "I built this website using React.",
         "Hosted with Github Pages.",
         "Check out my Github!"
+    ],
+    "skills": {
+        "Programming": [
+            "Java",
+            "Kotlin",
+            "C/C++",
+            "Javascript",
+            "Any"
+        ],
+        "Frameworks/Libraries": [
+            "OpenGL",
+            "OpenCL",
+            "React",
+            "VueJS",
+            "NodeJS",
+            "JavaFX"
+        ],
+        "Misc": [
+            "Git",
+            "Linux Command Line",
+            "Agile/Scrum"
+        ]
+    },
+    "experience": [
+        {
+            "title": "Full-stack web developer internship",
+            "employer": "Robot Mascot",
+            "geolocation": "Norwich",
+            "description": "During the 2nd year of my studies, I was accepted as a full-stack web developer intern at Robot Mascot where I worked together with a team to build an bespoke e-commerce website for a client.",
+            "start": "2017-10",
+            "end": "2018-03"
+        },
+        {
+            "title": "UEA App Development Internship",
+            "employer": "University of East Anglia",
+            "geolocation": "Norwich",
+            "description": "In the summer of my 2nd year at UEA, I successfully applied for an internship hosted by the university where I worked in a team with other interns to develop a mobile application for a client using the Scrum Agile framework.",
+            "start": "2018-06",
+            "end": "2018-09"
+        },
+        {
+            "title": "Freelance Web Developer",
+            "employer": "Robot Mascot",
+            "geolocation": "Norwich",
+            "description": "I was hired as a freelance web developer to maintain and add new features/content to the bespoke e-commerce website that was developed and launched during the internship.",
+            "start": "2019-04",
+            "end": "2019-08"
+        },
+        {
+            "title": "Associate Tutor",
+            "employer": "University of East Anglia",
+            "geolocation": "Norwich",
+            "description": "In my final year, I was asked to be take on the role of an associate tutor and be a lab assistant for a 2nd year computer science module for that semester. I would provide assistance and teaching to students that requested it in the computer labs for that module.",
+            "start": "2020-01",
+            "end": "2020-05"
+        }
+    ],
+    "education": [
+        {
+            "title": "Bachelor of Science in Computer Science",
+            "location": "University of East Anglia",
+            "description": "I achieved a first-class honours in BSc Computer Science at UEA with 79% overall and 85.5% in my dissertation/project. During this course, I studied graphics, computer vision, networking, parallel computation, and more. I was awarded best individual performance by a BSc Computing Student in my final year.",
+            "start": "2016-09",
+            "end": "2020-07"
+        }
+    ],
+    "hobbies": [
+        {
+            "hobby": "Badminton",
+            "image": "img/badminton.svg"
+        },
+        {
+            "hobby": "Fitness",
+            "image": "img/fitness.svg"
+        },
+        {
+            "hobby": "Home Automation",
+            "image": "img/home.svg"
+        },
+        {
+            "hobby": "DIY",
+            "image": "img/diy.svg"
+        },
+        {
+            "hobby": "Video Games",
+            "image": "img/games.svg"
+        },
+        {
+            "hobby": "New Technologies",
+            "image": "img/tv.svg"
+        },
+        {
+            "hobby": "Classical Music",
+            "image": "img/instrument.svg"
+        }
+    ],
+    "contact": [
+        {
+            "method": "Email",
+            "image": "img/email.svg",
+            "value": "kieferlam@gmail.com"
+        },
+        {
+            "method": "Mobile",
+            "image": "img/phone.svg",
+            "value": "07884955566"
+        },
+        {
+            "method": "LinkedIn",
+            "image": "img/linkedin.png",
+            "value": "@kieferlam"
+        }
     ]
 }
