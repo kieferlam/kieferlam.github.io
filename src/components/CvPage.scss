@@ -1,0 +1,83 @@
+@import '../global.scss';
+@import './MainHeader.scss';
+
+$content-default-font-size: 1.5rem;
+$content-min-width: auto;
+$content-width: 100ch;
+$content-max-width: 100vw;
+
+$grid-gap: 2rem;
+
+$border-width: 2px;
+
+$contact-icon-size: 1.5rem;
+$contact-icon-offset: 0.75rem;
+
+.CvPage{
+    margin: auto;
+    padding-top: $header-cv-portrait-image-width * 0.5;
+    width: $content-width;
+    min-width: $content-min-width;
+    max-width: $content-max-width;
+    font-size: $content-default-font-size;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $grid-gap 0;
+}
+
+.CvPage h1{ font-size: 2.25rem; }
+.CvPage h2{ font-size: 1.75rem; }
+.CvPage h1, .CvPage h2{
+    font-weight: normal;
+}
+
+.profile{
+    grid-column: span 2;
+    border-bottom: $border-width solid lightgray;
+}
+
+.profile p{
+    max-width: 70ch;
+}
+
+.profile-name{
+    font-size: 2rem;
+}
+.profile-location, .profile-email{
+    font-size: 1.75rem;
+}
+
+.grid-right-col{
+    border-left: $border-width solid lightgray;
+    padding-left: $grid-gap;
+}
+
+.contact ul{
+    list-style-type: none;
+}
+
+.contact li{
+    position: relative;
+}
+
+.hobbies ul{
+    list-style-type: none;
+}
+
+.hobbies li{
+    position: relative;
+}
+
+.list-icon{
+    position: absolute;
+    left: -$contact-icon-size - $contact-icon-offset;
+    display: grid;
+    place-content: center;
+    height: 100%;
+}
+
+.list-icon img{
+    width: $contact-icon-size;
+    height: $contact-icon-size;
+    filter: brightness(0);
+}

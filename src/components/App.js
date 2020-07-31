@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
+import { Switch, Route, HashRouter } from 'react-router-dom/cjs/react-router-dom.min';
 
 import MainPage from './MainPage';
 import CvPage from './CvPage';
@@ -19,25 +19,30 @@ class App extends React.Component {
         return (
             <div className="App">
                 <header>
+                    <HashRouter basename="/">
                     <Switch>
                         <Route exact path="/">
                             <MainHeader socials={this.state.socials} profile={this.state.profile} className="header-large" />
                         </Route>
-                        <Route path="*">
-                            <MainHeader className="header-default" />
+                        <Route path="/cv">
+                            <MainHeader socials={this.state.socials} profile={this.state.profile} className="header-cv" />
+                        </Route>
+                        <Route path="/(.+)">
+                            <MainHeader socials={this.state.socials} profile={this.state.profile} className="header-default" />
                         </Route>
                     </Switch>
+                    </HashRouter>
                 </header>
 
                 <main>
-                    <Switch>
+                    <HashRouter basename="/">
                         <Route exact path="/">
                             <MainPage />
                         </Route>
                         <Route path="/cv">
-                            <CvPage />
+                            <CvPage profile={this.state.profile} />
                         </Route>
-                    </Switch>
+                    </HashRouter>
                 </main>
 
                 <footer>
