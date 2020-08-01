@@ -15,7 +15,7 @@ function Skills(props) {
     for (const [skill_cat, skills] of Object.entries(props.profile.skills)) {
         if (!Array.isArray(skills)) continue
         skills_div.push(
-            <div className="skills-box">
+            <div key={skill_cat} className="skills-box">
                 <h2>{skill_cat}</h2>
                 <ul>
                     {skills.map(skill => <li key={`skill-${skill_cat}-${skill}`}>{skill}</li>)}
@@ -28,7 +28,7 @@ function Skills(props) {
 
 function Experience(props) {
     if (!props.profile.experience || !Array.isArray(props.profile.experience)) return <p>Something went wrong!</p>
-    var exp = props.profile.experience.map(e => <li key={`experience-${e.title}`}>
+    var exp = props.profile.experience.sort((a, b) => new Date(b.end) - new Date(a.end)).map(e => <li key={`experience-${e.title}`}>
         <h2>{e.title}</h2><p className="period">{StringToDateFormat(e.start)} &mdash; {StringToDateFormat(e.end)}</p>
         <p>{e.location}</p>
         <p>{e.description}</p>
@@ -74,17 +74,17 @@ class CvPage extends React.Component {
             <div className="profile">
                 <p className="profile-name">Kiefer Lam</p>
                 <p className="profile-location">Colchester, UK</p>
-                <p className="profile-email">kieferlam@gmail.com</p>
+                <p className="profile-email">kieferlam@gmail.com &mdash; <a href="https://github.com/kieferlam">github.com/kieferlam</a> &mdash; <a href="https://www.linkedin.com/in/kieferlam/">linkedin.com/in/kieferlam</a></p>
                 <p className="profile-summary">{summary}</p>
             </div>
             <div className="grid-left-col">
-                <div className="skills">
-                    <h1>Skills</h1>
-                    <Skills profile={profile} />
-                </div>
                 <div className="education">
                     <h1>Education</h1>
                     <Education profile={profile} />
+                </div>
+                <div className="skills">
+                    <h1>Skills</h1>
+                    <Skills profile={profile} />
                 </div>
                 <div className="hobbies">
                     <h1>Personal Interests</h1>

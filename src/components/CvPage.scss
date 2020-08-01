@@ -3,7 +3,7 @@
 
 $content-default-font-size: 1.5rem;
 $content-min-width: auto;
-$content-width: 100ch;
+$content-width: 120ch;
 $content-max-width: 100vw;
 
 $grid-gap: 2rem;
@@ -50,6 +50,10 @@ $contact-icon-offset: 0.75rem;
 .grid-right-col{
     border-left: $border-width solid lightgray;
     padding-left: $grid-gap;
+}
+
+.grid-left-col{
+    padding-right: $grid-gap;
 }
 
 .contact ul{
