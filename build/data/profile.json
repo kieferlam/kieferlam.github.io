@@ -34,10 +34,10 @@
     },
     "experience": [
         {
-            "title": "Full-stack web developer internship",
+            "title": "Full stack web developer internship",
             "employer": "Robot Mascot",
             "geolocation": "Norwich",
-            "description": "During the 2nd year of my studies, I was accepted as a full-stack web developer intern at Robot Mascot where I worked together with a team to build a bespoke e-commerce website for a client.",
+            "description": "Worked as a full stack web developer in a team to build a bespoke e-commerce website for a client from the ground up.",
             "start": "2017-10",
             "end": "2018-03"
         },
@@ -45,7 +45,7 @@
             "title": "UEA App Development Internship",
             "employer": "University of East Anglia",
             "geolocation": "Norwich",
-            "description": "In the summer of my 2nd year at UEA, I successfully applied for an internship hosted by the university where I worked in a team with other interns to develop a mobile application for a client using the Scrum Agile framework.",
+            "description": "Worked in a team with other interns to develop a mobile application for a client using the Scrum Agile framework.",
             "start": "2018-06",
             "end": "2018-09"
         },
@@ -53,7 +53,7 @@
             "title": "Freelance Web Developer",
             "employer": "Robot Mascot",
             "geolocation": "Norwich",
-            "description": "I was hired as a freelance web developer to maintain and add new features/content to the bespoke e-commerce website that was developed and launched during the internship.",
+            "description": "Maintained the e-commerce website that was built bespoke during my internship.",
             "start": "2019-04",
             "end": "2019-08"
         },
@@ -61,7 +61,7 @@
             "title": "Associate Tutor",
             "employer": "University of East Anglia",
             "geolocation": "Norwich",
-            "description": "In my final year, I was asked to be take on the role of an associate tutor and be a lab assistant for a 2nd year computer science module for that semester. I would provide assistance and teaching to students that requested it in the computer labs for that module.",
+            "description": "Provided assistance and teaching to students that requested it in computer labs for a 2nd year module while I was in my 3rd year of studies.",
             "start": "2020-01",
             "end": "2020-05"
         }
