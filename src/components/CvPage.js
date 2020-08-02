@@ -86,9 +86,9 @@ class CvPage extends React.Component {
                     <h1>Skills</h1>
                     <Skills profile={profile} />
                 </div>
-                <div className="hobbies">
-                    <h1>Personal Interests</h1>
-                    <Hobbies profile={profile} />
+                <div className="contact">
+                    <h1>How to reach me</h1>
+                    <Contact profile={profile} />
                 </div>
             </div>
             <div className="grid-right-col">
@@ -96,9 +96,9 @@ class CvPage extends React.Component {
                     <h1>Experience</h1>
                     <Experience profile={profile} />
                 </div>
-                <div className="contact">
-                    <h1>How to reach me</h1>
-                    <Contact profile={profile} />
+                <div className="hobbies">
+                    <h1>Personal Interests</h1>
+                    <Hobbies profile={profile} />
                 </div>
             </div>
         </div>
