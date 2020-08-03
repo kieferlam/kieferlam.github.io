@@ -71,8 +71,9 @@ class CvPage extends React.Component {
         var summary = profile.summary ? profile.summary : ''
 
         return <div className={`CvPage ${this.props.className}`}>
+            <div className="back-link-container"><a href="/">&lt; Back</a></div>
             <div className="profile">
-                <p className="profile-name"><span>Kiefer Lam</span> <span><a href={process.env.PUBLIC_URL + process.env.REACT_APP_PDF_LOCATION}>View PDF version</a></span></p>
+                <p className="profile-name"><span>Kiefer Lam</span> <span><a href={process.env.PUBLIC_URL + process.env.REACT_APP_PDF_LOCATION} target="_blank">View PDF version</a></span></p>
                 <p className="profile-location">Colchester, UK</p>
                 <p className="profile-email">kieferlam@gmail.com &mdash; <a href="https://github.com/kieferlam">github.com/kieferlam</a> &mdash; <a href="https://www.linkedin.com/in/kieferlam/">linkedin.com/in/kieferlam</a></p>
                 <p className="profile-summary">{summary}</p>

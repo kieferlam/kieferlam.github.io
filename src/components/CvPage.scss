@@ -31,6 +31,18 @@ $contact-icon-offset: 0.75rem;
     font-weight: normal;
 }
 
+.back-link-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+}
+.back-link-container a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
 .profile{
     grid-column: span 2;
     border-bottom: $border-width solid lightgray;
