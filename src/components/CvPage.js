@@ -29,8 +29,9 @@ function Skills(props) {
 function Experience(props) {
     if (!props.profile.experience || !Array.isArray(props.profile.experience)) return <p>Something went wrong!</p>
     var exp = props.profile.experience.sort((a, b) => new Date(b.end) - new Date(a.end)).map(e => <li key={`experience-${e.title}`}>
-        <h2>{e.title}</h2><p className="period">{StringToDateFormat(e.start)} &mdash; {StringToDateFormat(e.end)}</p>
-        <p>{e.location}</p>
+        <h2>{e.title}</h2>
+        <p>{e.employer}</p>
+        <p className="period">{StringToDateFormat(e.start)} &mdash; {StringToDateFormat(e.end)}</p>
         <p>{e.description}</p>
     </li>)
     return <ul>{exp}</ul>
