@@ -1,5 +1,5 @@
 {
-    "summary": "Results-driven programming enthusiast since young; I am a graduate in computer science from the University of East Anglia skilled in problem solving with a strong effort to constantly improve.",
+    "summary": "Results-driven programming enthusiast since young; I am a graduate in computer science from the University of East Anglia skilled in problem solving with strong motivation to constantly improve.",
     "info": [
         "kieferlam@gmail.com",
         "07884955566",
@@ -15,8 +15,7 @@
             "Java",
             "Kotlin",
             "C/C++",
-            "Javascript",
-            "Any"
+            "Javascript"
         ],
         "Frameworks/Libraries": [
             "OpenGL",
@@ -70,7 +69,7 @@
         {
             "title": "Bachelor of Science in Computer Science",
             "location": "University of East Anglia",
-            "description": "I achieved a first-class honours in BSc Computer Science at UEA with 79% overall and 85.5% in my dissertation/project. During this course, I studied graphics, computer vision, networking, parallel computation, and more. I was awarded best individual performance by a BSc Computing Student in my final year.",
+            "description": "I achieved a first-class honours in BSc Computer Science at UEA with 79% overall and 85.5% in my dissertation/project. During this course, I studied graphics, computer vision, networking, parallel computation, and more. I was awarded best individual performance in my final year.",
             "start": "2016-09",
             "end": "2020-07"
         }
