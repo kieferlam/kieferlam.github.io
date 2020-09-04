@@ -1,5 +1,5 @@
 {
-    "summary": "Results-driven programming enthusiast since young; I am a graduate in computer science from the University of East Anglia skilled in problem solving with strong motivation to constantly improve.",
+    "summary": "Results-driven programming enthusiast; I am a graduate in computer science from the University of East Anglia skilled in problem solving with strong motivation to constantly improve.",
     "info": [
         "kieferlam@gmail.com",
         "07884955566",
@@ -15,7 +15,9 @@
             "Java",
             "Kotlin",
             "C/C++",
-            "Javascript"
+            "Javascript",
+            "Python",
+            "C#"
         ],
         "Frameworks/Libraries": [
             "OpenGL",
@@ -36,7 +38,7 @@
             "title": "Full stack web developer internship",
             "employer": "Robot Mascot",
             "geolocation": "Norwich",
-            "description": "Worked as a full stack web developer in a team to build a bespoke e-commerce website for a client from the ground up.",
+            "description": "Worked as a full stack web developer in a team to build a custom e-commerce website for a client from the ground up using PHP, MongoDB, HTML/CSS, Javascript, VueJS.",
             "start": "2017-10",
             "end": "2018-03"
         },
@@ -44,7 +46,7 @@
             "title": "UEA App Development Internship",
             "employer": "University of East Anglia",
             "geolocation": "Norwich",
-            "description": "Worked in a team with other interns to develop a mobile application for a client using the Scrum Agile framework.",
+            "description": "Worked in a team with other interns to develop a mobile application for a client using the Scrum/Agile framework. Developed with Unity, C#, Firebase.",
             "start": "2018-06",
             "end": "2018-09"
         },
@@ -52,7 +54,7 @@
             "title": "Freelance Web Developer",
             "employer": "Robot Mascot",
             "geolocation": "Norwich",
-            "description": "Maintained the e-commerce website that was built bespoke during my internship.",
+            "description": "Maintained the e-commerce website that was custom built during my internship, updating and adding website functionality according to client requests",
             "start": "2019-04",
             "end": "2019-08"
         },
@@ -60,7 +62,7 @@
             "title": "Software Engineering Associate Tutor",
             "employer": "University of East Anglia",
             "geolocation": "Norwich",
-            "description": "Provided assistance and teaching to students that requested it in computer labs for a 2nd year module while I was in my 3rd year of studies.",
+            "description": "Provided software engineering and Java assistance and teaching to students that required it in labs for a 2nd year module while in my 3rd year of studies. Successfully troubleshooting code with short familiarisation with code.",
             "start": "2020-01",
             "end": "2020-05"
         }
@@ -69,7 +71,7 @@
         {
             "title": "Bachelor of Science in Computer Science",
             "location": "University of East Anglia",
-            "description": "I achieved a first-class honours in BSc Computer Science at UEA with 79% overall and 85.5% in my dissertation/project. During this course, I studied graphics, computer vision, networking, parallel computation, and more. I was awarded best individual performance in my final year.",
+            "description": "I achieved a First Class Honours in BSc Computer Science at UEA with 85.5% in my dissertation.During this course, I studied graphics, computer vision, networking, parallel computation, andmore. I was awarded best individual performance in my final year.",
             "start": "2016-09",
             "end": "2020-07"
         }
