@@ -56,7 +56,7 @@ function Hobbies(props) {
     return <ul>{hobs}</ul>
 }
 
-function Contact(props){
+function Contact(props) {
     if (!props.profile.contact || !Array.isArray(props.profile.contact)) return <p>Something went wrong!</p>
     var contact = props.profile.contact.map(c => <li key={`contact-${c.method}`}>
         <div className="list-icon"><img src={process.env.PUBLIC_URL + c.image} alt={c.method} /></div>
@@ -74,7 +74,7 @@ class CvPage extends React.Component {
         return <div className={`CvPage ${this.props.className}`}>
             <div className="back-link-container"><a href="/">&lt; Back</a></div>
             <div className="profile">
-                <p className="profile-name"><span>Kiefer Lam</span> <span><a href={process.env.PUBLIC_URL + process.env.REACT_APP_PDF_LOCATION} target="_blank">View PDF version</a></span></p>
+                <p className="profile-name"><span>Kiefer Lam</span> <span><a href={process.env.PUBLIC_URL + process.env.REACT_APP_PDF_LOCATION} target="_blank" rel="noopener noreferrer">View PDF version</a></span></p>
                 <p className="profile-location">Colchester, UK</p>
                 <p className="profile-email">kieferlam@gmail.com &mdash; <a href="https://github.com/kieferlam">github.com/kieferlam</a> &mdash; <a href="https://www.linkedin.com/in/kieferlam/">linkedin.com/in/kieferlam</a></p>
                 <p className="profile-summary">{summary}</p>

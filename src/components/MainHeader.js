@@ -5,28 +5,21 @@ import Portrait from '../media/img/portrait.jpg';
 import Hexagon from './HexagonDiv/Hexagon';
 
 class MainHeader extends React.Component {
-    getWaveSvg() {
-        return <svg width="0" height="0">
-            <defs>
-                <clipPath id="wave" clipPathUnits="objectBoundingBox">
-                    <path d=""></path>
-                </clipPath>
-            </defs>
-        </svg >
-    }
-
     render() {
 
         const social_links = Array.isArray(this.props.socials) ? this.props.socials.map((soc, index) => <li key={'header-socials-' + index}><a href={soc.url}><img src={process.env.PUBLIC_URL + soc.img} alt={soc.name} /></a></li>) : [];
 
         var portraitDOM = <img src={Portrait} alt="Portrait" />;
-        portraitDOM = this.props.className === "header-large" ? ( <Hexagon height="20rem">{portraitDOM}</Hexagon> ) : portraitDOM;
+        portraitDOM = this.props.className === "header-large" ? (<Hexagon height="20rem">{portraitDOM}</Hexagon>) : portraitDOM;
 
         return (
             <div className={this.props.className}>
                 <div className="header-colour-overlay">
                     <div className="header-background-text-container">
                         <p>Random tech image from unsplash.com</p>
+                    </div>
+                    <div className="header-canvas-container">
+                        <canvas id="header-canvas" ref={c => this.canvas = c}></canvas>
                     </div>
                     <div className="header-container">
                         <div className="portrait-container">{portraitDOM}</div>
@@ -50,8 +43,7 @@ class MainHeader extends React.Component {
                         </div>
                     </div>
                 </div>
-                {this.getWaveSvg()}
-            </div>
+            </div >
         )
     }
 }
