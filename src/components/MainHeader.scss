@@ -86,14 +86,18 @@ header svg{
     padding: 1rem;
 }
 
-#header-canvas {
+.header-large #header-canvas {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     z-index: 1;
-  }
+}
+
+.header-default #header-canvas{
+    display: none;
+}
 
 .header-cv .header-text-container{
     display: none;
