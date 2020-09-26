@@ -35,14 +35,14 @@
 
 <body>
   <script type="module">
-    import * as Boids from './BoidsJS/boids/boid_canvas.js';
-    import * as Util from './BoidsJS/boids/util.js';
+    import * as Boids from './boidsjs_project/boids/boid_canvas.js';
+    import * as Util from './boidsjs_project/boids/util.js';
 
     Util.asyncCheck(() => {
       if (!document.getElementById('header-canvas')) return Util.ASYNC_CHECK_RETRY;
       return Util.ASYNC_CHECK_RESOLVE;
     }, -1, 1).then(() => {
-      window.BOIDS_PATH = "/BoidsJS";
+      window.BOIDS_PATH = "/boidsjs_project";
       Boids.setupBoidCanvas(document.getElementById('header-canvas'));
       Boids.boid_main();
     });
