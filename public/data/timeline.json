@@ -1,5 +1,12 @@
 [
     {
+        "img": "/img/rtsw.png",
+        "title": "Software Developer, RT Software, London",
+        "date": "2020-10",
+        "enddate": "Present",
+        "description": "Lead a team to create web apps that integrate with existing desktop software using React and Typescript. Developed a new product in a series of graphics analysis and broadcast software with C++. Maintained existing software through testing, bug fixes, and support cases."
+    },
+    {
         "img": "/img/uea.png",
         "title": "Started studying Computer Science at the University&nbsp;of&nbsp;East&nbsp;Anglia",
         "date": "2016-09",
